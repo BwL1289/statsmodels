@@ -25,6 +25,7 @@ py.extension_module('_conventional',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_filters',
+  dependencies: [m_dep]
 )
 
 _inversions_pyx = custom_target(
@@ -40,6 +41,7 @@ py.extension_module('_inversions',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_filters',
+  dependencies: [m_dep]
 )
 
 _univariate_diffuse_pyx = custom_target(
@@ -55,6 +57,7 @@ py.extension_module('_univariate_diffuse',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_filters',
+  dependencies: [m_dep]
 )
 
 _univariate_pyx = custom_target(
@@ -70,4 +73,5 @@ py.extension_module('_univariate',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_filters',
+  dependencies: [m_dep]
 )

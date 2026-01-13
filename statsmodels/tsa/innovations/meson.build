@@ -17,4 +17,5 @@ py.extension_module('_arma_innovations',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/innovations',
+  dependencies: [m_dep]
 )

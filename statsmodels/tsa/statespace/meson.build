@@ -92,6 +92,7 @@ py.extension_module('_representation',
   include_directories: [inc_np, inc_sm],
   install : true,
   subdir: 'statsmodels/tsa/statespace',
+  dependencies: [m_dep]
 )
 
 _simulation_smoother_pyx = custom_target(
@@ -107,6 +108,7 @@ py.extension_module('_simulation_smoother',
   include_directories: [inc_np, inc_sm],
   install : true,
   subdir: 'statsmodels/tsa/statespace',
+  dependencies: [m_dep]
 )
 
 _tools_pyx = custom_target(

@@ -71,6 +71,7 @@ py.extension_module('_univariate_diffuse',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_smoothers',
+  dependencies: [m_dep]
 )
 
 _univariate_pyx = custom_target(
@@ -86,4 +87,5 @@ py.extension_module('_univariate',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/statespace/_smoothers',
+  dependencies: [m_dep]
 )

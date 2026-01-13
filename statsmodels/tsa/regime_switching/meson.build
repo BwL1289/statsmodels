@@ -18,6 +18,7 @@ py.extension_module('_hamilton_filter',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/regime_switching',
+  dependencies: [m_dep]
 )
 
 
@@ -34,4 +35,5 @@ py.extension_module('_kim_smoother',
   include_directories: [inc_np, inc_sm],
   install: true,
   subdir: 'statsmodels/tsa/regime_switching',
+  dependencies: [m_dep]
 )

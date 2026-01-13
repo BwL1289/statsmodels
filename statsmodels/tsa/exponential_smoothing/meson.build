@@ -5,4 +5,5 @@ py.extension_module(
     include_directories: [inc_np],
     subdir: 'statsmodels/tsa/exponential_smoothing',
     c_args: cython_c_args,
+    dependencies: [m_dep]
 )
